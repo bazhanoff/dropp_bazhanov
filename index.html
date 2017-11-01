@@ -7,68 +7,90 @@
 </head>
 <body>
     <div class="page">
-        <div class="main-container">
             <header class="header">
-                <div class="logo">
-                    DR<span class="logo__char">O</span>PP
+                <div class="main-container">
+                    <h1 class="header__logo">
+                        DR<span class="header__char">O</span>PP
+                    </h1>
+                    <nav class="menu header__menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__link menu__link_active" href="#home">HOME</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#services">SERVICES</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">ABOUT</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">BLOG</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a class="menu__link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link menu__link_active" href="#">HOME</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">SERVICES</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">PORTFOLIO</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">BLOG</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
-                    </ul>
-                </nav>
             </header>
-            <div class="home">
-                <div class="home__column">
-                    COME, STAY FOR A COFFEE
-                </div>
-                <div class="home__item">
-                    <button type="button" class="home__button">HAVE A SEAT</button>
+            <div class="home" id="home">
+                <div class="main-container">
+                    <div class="home__caption">
+                        COME, STAY FOR A COFFEE
+                    </div>
+                    <a href="#" class="home__link">HAVE A SEAT</a>
                 </div>
             </div>
-            <section class="services">
-                <h2 class="services__title">
-                    SERVICES
-                </h2>
-                <div class="services__content">
-                    <article class="branding services__column">
-                        <img src="img/PEN.JPG" alt="Карандаш">
-                        <h2 class="branding__title">BRANDING</h2>
-                        <div class="branding__content">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor
-                            ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </div>
-                    </article>
-                    <article class="design services__column">
-                        <img src="img/PC.JPG" alt="Компьютер">
-                        <h2 class="design__title">WEB DESIGN</h2>
-                        <div class="design__content">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor
-                            ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </div>
-                    </article>
-                    <article class="marketing services__column">
-                        <img src="img/Mic.JPG" alt="Микрофон">
-                        <h2 class="marketing_title">MARKETING</h2>
-                        <div class="marketing__content">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit, sed do eiusmod tempor
-                            ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud
-                        </div>
-                    </article>
+            <section class="section services" id="services">
+                <div class="main-container">
+                    <h2 class="section__title services__title">
+                        SERVICES
+                    </h2>
+                </div>
+                <div class="section__content services__content">
+                    <div class="main-container">
+                        <article class="article services__column">
+                            <img src="img/PEN.jpg" alt="Карандаш">
+                            <h2 class="article__title services__column-title">
+                                BRANDING
+                            </h2>
+                            <div class="article__content services__column-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud
+                            </div>
+                        </article>
+                        <article class="article services__column">
+                            <img src="img/PC.jpg" alt="Компьютер">
+                            <h2 class="article__title services__column-title">
+                                WEB DESIGN
+                            </h2>
+                            <div class="article__content services__column-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud
+                            </div>
+                        </article>
+                        <article class="article services__column services__marketing">
+                            <img src="img/Mic.jpg" alt="Микрофон">
+                            <h2 class="article__title services__column-title">
+                                MARKETING
+                            </h2>
+                            <div class="article__content services__column-text">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                ut labore et dolore magna aliqua. Ut enim
+                                ad minim veniam, quis nostrud
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </section>
-        </div>
     </div>
 </body>
 </html>

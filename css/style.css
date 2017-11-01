@@ -18,47 +18,50 @@ body{
     background: #fff;
 }
 
-.main-container{
-    width: 1170px;
-    margin: 0 auto;
-    /*overflow: hidden;*/
+img{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
 }
 
-.logo{
+.main-container{
+    min-width:  768px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header__logo{
     float: left;
     font: 70px "Oswald-Regular";
     color: #474444;
-    width: 177px;
+    width: 17%;
+    margin: 0;
 }
 
-.logo:after{
+.header__logo:after{
     display: block;
     content: "";
     clear: left;
 }
 
-.logo__char{
+.header__char{
     color: #fd5433;
 }
 
-.menu{
+.header__menu{
     float: right;
     font: 17px "Oswald-Bold";
+    max-width: 70%;
 }
 
 .menu__list{
     margin: 0;
-    padding: 0;
     list-style: none;
     padding: 47px 0;
 }
 
-.menu__item{
+.menu__list-item{
     float: left;
-}
-
-.menu__item:last-of-type{
-    margin-right: 0;
 }
 
 .menu__list:after{
@@ -92,78 +95,113 @@ body{
 .home{
     position: relative;
 }
+
 .home:before{
     content:"";
     position:absolute;
     z-index:-1;
-    top: 0%;
-    left: -17%;
     background-image: url("../img/Banner.jpg");
+    /*background-attachment: fixed; Неплохое оформление*/
     background-repeat: no-repeat;
-    width: 1600px;
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
     height: 800px;
 }
 
-.home__column{
+.home:after{
+    content: "";
+    position: absolute;
+    z-index:-2;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #474444;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.home__caption{
     font: 120px "Oswald-Regular";
     color: #fff;
-    padding-top: 180px;
+    padding-top: 170px;
     margin-bottom: 27px;
+    text-align: center;
 }
 
-.home__item{
-    width: 282px;
+.home__link{
+    display: block;
+    text-align: center;
+    max-width: 24%;
     margin: 0 auto;
-}
-
-.home__button{
-    cursor: pointer;
-    padding: 16px 50px;
+    text-decoration: none;
+    padding: 13px 0;
     font: 32px "Oswald-Bold";
     color: #fff;
     background: #fd5433;
     border-radius: 5px;
-    outline: 0;
-    border: 0px;
     box-shadow: 0 6px 4px -4px #000;
 }
 
+.home__link:active, .home__link:hover{
+    background: #ff6d51;
+}
+
+
 .services{
-    margin-top: 353px;
-    text-align: center;
+    margin-top: 393px;
+}
+
+.section__title{
+    font: 32px "Oswald-Bold";
+    color: #fd5433;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .services__title{
-    font: 32px "Oswald-Bold";
-    color: #fd5433;
-    display: inline-block;
+    width: 10%;
+}
+
+.section__content{
+    border-top: 1px solid #474444;
 }
 
 .services__content{
-    padding: 101px 0 81px;
-    border-top: 1px solid #474444;
     border-bottom: 1px solid #474444;
+    padding: 101px 0 81px;
 }
 
 .services__column{
     display: inline-block;
     vertical-align: bottom;
-    width: 370px;
+    width: 32%;
+    text-align: center;
+    margin-right: 1%;
 }
 
-.services__column:not(:nth-of-type(3)){
-    margin-right: 25px;
+.services__marketing{
+    margin-right: 0;
 }
 
-.branding__title, .design__title, .marketing_title{
+.article__title{
     font: 30px "Oswald-Bold";
     color: #3d3c3c;
-    margin-bottom: 38px;
+    margin: 0;
 }
 
-.branding__content, .design__content, .marketing__content{
-    width: 301px;
-    margin: 0 auto;
+.services__column-title{
+    margin: 38px 0;
+}
+
+.article__content{
     font-family: "Oswald-Regular";
     color: #121212;
+}
+
+.services__column-text{
+    width: 64.5%;
+    margin: 0 auto;
 }
