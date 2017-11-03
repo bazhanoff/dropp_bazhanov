@@ -312,30 +312,19 @@ h2{
     margin-top: 20px;
 }
 
+progress::-webkit-progress-bar{
+    background: #fd5433;
+}
+
+progress::-webkit-progress-value{
+    background: #fff;
+}
+
 .skill__bar{
     display: inline-block;
     vertical-align: middle;
     width: 75%;
     margin: 0;
-    border: 8px solid #fff;
-}
-
-.skill__bar-98{
-    width: 70%;
-}
-
-.skill__percent{
-    float: right;
-}
-
-.skill__bar-67{
-    width: 50%;
-}
-
-.skill__bar-70{
-    width: 55%;
-}
-
-.skill__bar-58{
-    width: 45%;
+    background: #fff;
+    color: #fff;
 }
