@@ -328,3 +328,30 @@ progress::-webkit-progress-value{
     background: #fff;
     color: #fff;
 }
+
+.posts__column{
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin-right: 2px;
+}
+
+.posts__item-column{
+    margin-right: 0;
+}
+
+.posts__column-text{
+    display: inline-block;
+    vertical-align: top;
+    width: 42%;
+    margin-left: 30px;
+}
+
+.posts__title{
+    font-size: 25px;
+}
+
+
+.posts__article{
+    margin-top: 90px;
+}
