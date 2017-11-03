@@ -1,13 +1,15 @@
 @font-face{
     font-family: "Oswald-Regular";
-    src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+    src: url("../fonts/Oswald-Regular.woff") format("woff"),
+         url("../fonts/Oswald-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face{
     font-family: "Oswald-Bold";
-    src: url("../fonts/Oswald-Bold.ttf") format("truetype");
+    src: url("../fonts/Oswald-Bold.woff") format("woff"),
+         url("../fonts/Oswald-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
 }
@@ -35,6 +37,7 @@ img{
     font: 70px "Oswald-Regular";
     color: #474444;
     width: 17%;
+    max-width: 29%;
     margin: 0;
 }
 
@@ -99,12 +102,12 @@ img{
 .home:before{
     content:"";
     position:absolute;
-    z-index:-1;
+    z-index: -1;
     background-image: url("../img/Banner.jpg");
-    /*background-attachment: fixed; Неплохое оформление*/
+    /*background-attachment: fixed;*/
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.7;
+    opacity: .4;
     width: 100%;
     height: 800px;
 }
@@ -112,11 +115,11 @@ img{
 .home:after{
     content: "";
     position: absolute;
-    z-index:-2;
+    z-index:-3;
     top: 0%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #474444;
+    background-color: #515151;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -131,13 +134,17 @@ img{
     text-align: center;
 }
 
-.home__link{
-    display: block;
+.home__button{
     text-align: center;
-    max-width: 24%;
+}
+
+.home__link{
+    display: inline-block;
+    text-align: center;
+    max-width: 100%;
     margin: 0 auto;
     text-decoration: none;
-    padding: 13px 0;
+    padding: 13px 53px 9px;
     font: 32px "Oswald-Bold";
     color: #fff;
     background: #fd5433;
@@ -149,20 +156,20 @@ img{
     background: #ff6d51;
 }
 
+.section{
+    margin-top: 38px;
+}
 
 .services{
-    margin-top: 393px;
+    margin-top: 397px;
+    padding-top: 1px;
+    background: #fff;
 }
 
 .section__title{
     font: 32px "Oswald-Bold";
     color: #fd5433;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.services__title{
-    width: 10%;
+    text-align: center;
 }
 
 .section__content{
@@ -186,14 +193,14 @@ img{
     margin-right: 0;
 }
 
-.article__title{
+h2{
     font: 30px "Oswald-Bold";
     color: #3d3c3c;
-    margin: 0;
+    margin: 0 0 38px;
 }
 
-.services__column-title{
-    margin: 38px 0;
+.services__title{
+    margin-top: 38px;
 }
 
 .article__content{
@@ -204,4 +211,133 @@ img{
 .services__column-text{
     width: 64.5%;
     margin: 0 auto;
+}
+
+.protfolio__content{
+    border-top: 0;
+}
+
+.portfolio__img{
+    float: left;
+    width: 16.66%;
+    max-width: 100%;
+}
+
+.portfolio__column:after{
+    display: block;
+    content: "";
+    clear: left;
+}
+
+.about__header{
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.member__img{
+    display: inline-block;
+    vertical-align: top;
+    width: 24%;
+    text-align: center;
+}
+
+.about__content{
+    position: relative;
+    padding: 70px 0;
+}
+
+.about__content:before{
+    content: "";
+    position: absolute;
+    z-index:-3;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fd5433;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 349px;
+}
+
+.member__info{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    width: 47%; /*549px*/
+}
+
+.member__title{
+    font: 22px "Oswald-Bold";
+    color: inherit;
+    margin: 0 0 38px;
+}
+
+.member__text{
+    font-family: "Oswald-Regular";
+    color: #fff;
+    width: 80%;
+    margin-top: 12px;
+}
+
+.skill{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    color: #fff;
+}
+
+.skill__column{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    color: #fff;
+}
+
+.skill__column-bar{
+    padding-top: 60px;
+    width: 59%;
+}
+
+
+.skill__text:not(:nth-of-type(1)){
+    font-family: "Oswald-Regular";
+    color: #fff;
+    width: 80%;
+    margin-top: 12px;
+}
+
+.skill__bar-row:not(:nth-of-type(1)){
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.skill__bar{
+    display: inline-block;
+    vertical-align: middle;
+    width: 75%;
+    margin: 0;
+    border: 8px solid #fff;
+}
+
+.skill__bar-98{
+    width: 70%;
+}
+
+.skill__percent{
+    float: right;
+}
+
+.skill__bar-67{
+    width: 50%;
+}
+
+.skill__bar-70{
+    width: 55%;
+}
+
+.skill__bar-58{
+    width: 45%;
 }
