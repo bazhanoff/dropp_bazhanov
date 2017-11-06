@@ -20,6 +20,10 @@ body{
     background: #fff;
 }
 
+*:focus{
+    outline: 2px solid #fd5433;
+}
+
 img{
     display: inline-block;
     max-width: 100%;
@@ -27,6 +31,7 @@ img{
 }
 
 .main-container{
+    padding-top: 2px;
     min-width:  768px;
     max-width: 1170px;
     margin: 0 auto;
@@ -133,25 +138,30 @@ img{
     text-align: center;
 }
 
-.home__button{
+.home__item{
     text-align: center;
 }
 
-.home__link{
-    display: inline-block;
-    text-align: center;
-    max-width: 100%;
-    margin: 0 auto;
-    text-decoration: none;
-    padding: 13px 53px 9px;
+.home__button{
+    padding: 13px 54px 11px;
     font: 32px "Oswald-Bold";
+    border-radius: 5px;
+}
+
+.home__button:focus{
+    outline: 2px solid #fff;
+}
+
+.button{
+    transition: all .5s ease-in-out;
+    text-decoration: none;
     color: #fff;
     background: #fd5433;
-    border-radius: 5px;
+    border-top: 2px solid #ff6d51;
     box-shadow: 0 6px 4px -4px #000;
 }
 
-.home__link:active, .home__link:hover{
+.button:active, .button:hover{
     background: #ff6d51;
 }
 
@@ -160,7 +170,7 @@ img{
 }
 
 .services{
-    margin-top: 397px;
+    margin-top: 435px;
     padding-top: 1px;
     background: #fff;
 }
@@ -219,7 +229,6 @@ h2{
 .portfolio__img{
     float: left;
     width: 16.66%;
-    max-width: 100%;
 }
 
 .portfolio__column:after{
@@ -233,7 +242,7 @@ h2{
     margin-bottom: 65px;
 }
 
-.member__img{
+.member__link{
     display: inline-block;
     vertical-align: top;
     width: 24%;
@@ -332,26 +341,135 @@ progress::-webkit-progress-value{
 .posts__column{
     display: inline-block;
     vertical-align: top;
-    width: 48%;
-    margin-right: 2px;
+    width: 49%;
+    margin-right: 10px;
 }
 
 .posts__item-column{
     margin-right: 0;
 }
 
-.posts__column-text{
+.posts__article{
+    margin-top: 90px;
+}
+
+.posts__content{
+    padding-bottom: 99px;
+    border-bottom: 1px solid #474444;
+}
+
+.posts__column-content{
     display: inline-block;
     vertical-align: top;
-    width: 42%;
-    margin-left: 30px;
+    width: 49%;
+    margin-left: 17px;
+    color: #686868;
 }
 
 .posts__title{
     font-size: 25px;
+    margin-bottom: 0;
 }
 
+.posts__date{
+    margin-top: 10px;
+    padding-bottom: 18px;
+}
 
-.posts__article{
-    margin-top: 90px;
+.posts__month-hr{
+    padding-bottom: 14px;
+    border-bottom: 4px solid #fd5433;
+}
+
+.posts__column-text{
+    margin-top: 30px;
+}
+
+.contact__content{
+    position: relative;
+    border: 0;
+}
+
+.contact__content:before{
+    content:"";
+    position:absolute;
+    z-index: -1;
+    background-image: url("../img/bg-city.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 572px;
+}
+
+.contact__content:after{
+    content: "";
+    position: absolute;
+    z-index:-3;
+    top: 0%;
+    left: 0%;
+    background-color: #515151;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 572px;
+}
+
+.feedback{
+    padding-top: 28px;
+    text-align: center;
+    font: 20px "Oswald-Regular";
+    color: #fd5433;
+}
+
+::-webkit-input-placeholder{
+   font: 20px "Oswald-Regular";
+   color:  #fd5433;
+}
+
+.feedback__name{
+    box-sizing: border-box;
+    padding: 21px 21px 19px;
+    width: 49%;
+    margin-right: 25px;
+    font: 20px "Oswald-Regular";
+    color: #fd5433;
+}
+
+.feedback__email{
+    box-sizing: border-box;
+    padding: 21px 21px 19px;
+    width: 48%;
+    font: 20px "Oswald-Regular";
+    color: #fd5433;
+}
+
+.feedback__message{
+    width: 96%;
+    padding: 21px 21px 19px;
+    margin-top: 28px;
+    font: 20px "Oswald-Regular";
+    color:  #fd5433;
+}
+
+.feedback__button{
+    margin-top: 24px;
+    font: 26px "Oswald-Bold";
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 100%;
+    padding: 18px 0 14px;
+}
+
+.footer{
+    margin-top: 83px;
+    border-top: 2px solid #fff;
+}
+
+.footer__content{
+    margin-top: 10px;
+    text-align: center;
+    font: 18px "Oswald-Regular";
+    color: #fff;
 }
