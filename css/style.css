@@ -460,6 +460,7 @@ progress::-webkit-progress-value{
     border-left: 0;
     width: 100%;
     padding: 18px 0 14px;
+    cursor: pointer;
 }
 
 .footer{
