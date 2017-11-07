@@ -45,12 +45,6 @@ img{
     margin: 0;
 }
 
-.header__logo:after{
-    display: block;
-    content: "";
-    clear: left;
-}
-
 .header__char{
     color: #fd5433;
 }
@@ -64,21 +58,15 @@ img{
 .menu__list{
     margin: 0;
     list-style: none;
-    padding: 47px 0;
+    padding: 47px 0 40px;
 }
 
 .menu__list-item{
     float: left;
 }
 
-.menu__list:after{
-    display: block;
-    content: "";
-    clear: left;
-}
-
 .menu__link{
-    padding: 47px 16px;
+    padding: 47px 16px 40px;
     text-decoration: none;
     color: #565656;
 }
