@@ -41,7 +41,6 @@ img{
     float: left;
     font: 70px "Oswald-Regular";
     color: #474444;
-    width: 17%;
     max-width: 29%;
     margin: 0;
 }
@@ -281,7 +280,7 @@ h2{
 }
 
 .member__text{
-    font-family: "Oswald-Regular";
+    font-family: Arial;
     color: #fff;
     width: 80%;
     margin-top: 12px;
@@ -302,13 +301,12 @@ h2{
 }
 
 .skill__column-bar{
-    padding-top: 60px;
+    padding-top: 59px;
     width: 59%;
 }
 
-
 .skill__text:not(:nth-of-type(1)){
-    font-family: "Oswald-Regular";
+    font-family: Arial;
     color: #fff;
     width: 80%;
     margin-top: 12px;
@@ -318,7 +316,7 @@ h2{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 12px;
 }
 
 progress::-webkit-progress-bar{
@@ -361,7 +359,7 @@ progress::-webkit-progress-value{
 .posts__column-content{
     display: inline-block;
     vertical-align: top;
-    width: 49%;
+    width: 48%;
     margin-left: 17px;
     color: #686868;
 }
@@ -374,6 +372,7 @@ progress::-webkit-progress-value{
 .posts__date{
     margin-top: 10px;
     padding-bottom: 18px;
+    font: 15px "Oswald-Bold";
 }
 
 .posts__month-hr{
@@ -382,7 +381,9 @@ progress::-webkit-progress-value{
 }
 
 .posts__column-text{
+    width: 88%;
     margin-top: 30px;
+    font: 16px Arial;
 }
 
 .contact__content{
@@ -418,12 +419,12 @@ progress::-webkit-progress-value{
 .feedback{
     padding-top: 28px;
     text-align: center;
-    font: 20px "Oswald-Regular";
+    font-size: 20px;
     color: #fd5433;
 }
 
 ::-webkit-input-placeholder{
-   font: 20px "Oswald-Regular";
+   font-size: 20px;
    color:  #fd5433;
 }
 
@@ -432,7 +433,7 @@ progress::-webkit-progress-value{
     padding: 21px 21px 19px;
     width: 49%;
     margin-right: 25px;
-    font: 20px "Oswald-Regular";
+    font-size: 20px;
     color: #fd5433;
 }
 
@@ -440,7 +441,7 @@ progress::-webkit-progress-value{
     box-sizing: border-box;
     padding: 21px 21px 19px;
     width: 48%;
-    font: 20px "Oswald-Regular";
+    font-size: 20px;
     color: #fd5433;
 }
 
@@ -448,7 +449,7 @@ progress::-webkit-progress-value{
     width: 96%;
     padding: 21px 21px 19px;
     margin-top: 28px;
-    font: 20px "Oswald-Regular";
+    font-size: 20px;
     color:  #fd5433;
 }
 
@@ -469,8 +470,8 @@ progress::-webkit-progress-value{
 }
 
 .footer__content{
-    margin-top: 10px;
+    margin-top: 30px;
     text-align: center;
-    font: 18px "Oswald-Regular";
+    font-size: 18px;
     color: #fff;
 }
