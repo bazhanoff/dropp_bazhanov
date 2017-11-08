@@ -194,7 +194,7 @@ img{
 
 .services__content{
     border-bottom: 1px solid #474444;
-    padding: 101px 0 81px;
+    padding-bottom: 81px;
 }
 
 .services__column{
@@ -213,6 +213,27 @@ img{
     margin-top: 38px;
     font-family: "Oswald-Bold";
     color: #474747;
+}
+
+.services__title_pen{
+    padding-top: 200px;
+    background-image: url("../img/PEN.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.services__title_pc{
+    padding-top: 200px;
+    background-image: url("../img/pc.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.services__title_mic{
+    padding-top: 200px;
+    background-image: url("../img/Mic.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .article__content{
@@ -249,20 +270,10 @@ img{
 
 .about__content{
     position: relative;
-    padding: 70px 0;
-}
-
-.about__content:before{
-    content: "";
-    position: absolute;
-    z-index:-3;
-    top: 0%;
-    left: 0%;
+    padding: 66px 0 45px;
     background-color: #fd5433;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 349px;
 }
 
 .member__info{
@@ -270,6 +281,21 @@ img{
     vertical-align: top;
     color: #fff;
     width: 47%;
+}
+
+.member__link_active{
+    position: relative;
+}
+
+.member__link_active:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 280px;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 20px solid transparent;
+    border-top: 40px solid #fff;
 }
 
 .member__title{
@@ -283,6 +309,15 @@ img{
     color: #fff;
     width: 80%;
     margin-top: 12px;
+}
+
+.member__socials{
+    margin-top: 53px;
+}
+
+.member__socials-link{
+    text-decoration: none;
+    margin-right: 20px;
 }
 
 .skill{
@@ -315,7 +350,7 @@ img{
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    margin-top: 12px;
+    margin-top: 13px;
 }
 
 progress::-webkit-progress-bar{
@@ -329,6 +364,7 @@ progress::-webkit-progress-value{
 .skill__bar{
     display: inline-block;
     vertical-align: middle;
+    height: 10px;
     width: 75%;
     margin: 0;
     background: #fff;
@@ -388,17 +424,17 @@ progress::-webkit-progress-value{
 }
 
 .contact__content{
-    /*background-image: url("../img/bg-city.jpg");
+    background-image: url("../img/bg-city.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 90px;*/
+    padding-bottom: 30px;
     width: 100%;
     position: relative;
     border: 0;
 }
 
-.contact__content:before{
+/*.contact__content:before{
     content:"";
     position:absolute;
     z-index: -1;
@@ -421,7 +457,7 @@ progress::-webkit-progress-value{
     background-size: cover;
     width: 100%;
     height: 572px;
-}
+}*/
 
 .feedback{
     padding: 28px 10px 0;
@@ -479,7 +515,7 @@ progress::-webkit-progress-value{
 }
 
 .footer__content{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
     font-size: 18px;
     color: #fff;
