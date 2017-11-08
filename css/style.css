@@ -20,8 +20,29 @@ body{
     background: #fff;
 }
 
-*:focus{
-    outline: 2px solid #fd5433;
+h1{
+	font-size: 70px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+	font-size: 30px;
+}
+
+h4{
+	font-size: 26px;
+}
+
+ul{
+	font-size: 17px;
+}
+
+p{
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 img{
@@ -31,14 +52,18 @@ img{
 }
 
 .main-container{
-    padding-top: 2px;
     min-width:  768px;
     max-width: 1170px;
     margin: 0 auto;
 }
 
+.header__layout{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .header__logo{
-    float: left;
     font: 70px "Oswald-Regular";
     color: #474444;
     max-width: 29%;
@@ -50,7 +75,6 @@ img{
 }
 
 .header__menu{
-    float: right;
     font: 17px "Oswald-Bold";
     max-width: 70%;
 }
@@ -65,10 +89,22 @@ img{
     float: left;
 }
 
+.menu__list:after{
+    display: block;
+    content: "";
+    clear: left;
+}
+
 .menu__link{
     padding: 47px 16px 40px;
     text-decoration: none;
     color: #565656;
+}
+
+.menu__link:focus{
+    outline: 0;
+    background: #fd5433;
+    color: #fff;
 }
 
 .menu__link:active, .menu__link:hover{
@@ -81,35 +117,26 @@ img{
     background: #fd5433;
 }
 
-.header:after{
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.home{
+.home-container{
     position: relative;
+    padding-top: 229px;
+    padding-bottom: 354px;
 }
 
-.home:before{
-    content:"";
-    position:absolute;
-    z-index: -1;
+.home__bg{
     background-image: url("../img/Banner.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .4;
-    width: 100%;
-    height: 800px;
+	background-size: cover;
+    box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, .4);
 }
 
-.home:after{
+.home__bg:after{
     content: "";
     position: absolute;
-    z-index:-3;
     top: 0%;
     left: 0%;
+    z-index: -1;
     background-color: #515151;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,8 +147,7 @@ img{
 .home__caption{
     font: 120px "Oswald-Regular";
     color: #fff;
-    padding-top: 170px;
-    margin-bottom: 27px;
+    margin-bottom: 57px;
     text-align: center;
 }
 
@@ -156,14 +182,8 @@ img{
     margin-top: 38px;
 }
 
-.services{
-    margin-top: 435px;
-    padding-top: 1px;
-    background: #fff;
-}
-
 .section__title{
-    font: 32px "Oswald-Bold";
+    font-family: "Oswald-Bold";
     color: #fd5433;
     text-align: center;
 }
@@ -189,14 +209,10 @@ img{
     margin-right: 0;
 }
 
-h2{
-    font: 30px "Oswald-Bold";
-    color: #3d3c3c;
-    margin: 0 0 38px;
-}
-
 .services__title{
     margin-top: 38px;
+    font-family: "Oswald-Bold";
+    color: #474747;
 }
 
 .article__content{
@@ -225,15 +241,10 @@ h2{
 }
 
 .about__header{
+    display: flex;
+    justify-content: space-between;
     margin-top: 65px;
     margin-bottom: 65px;
-}
-
-.member__link{
-    display: inline-block;
-    vertical-align: top;
-    width: 24%;
-    text-align: center;
 }
 
 .about__content{
@@ -258,7 +269,7 @@ h2{
     display: inline-block;
     vertical-align: top;
     color: #fff;
-    width: 47%; /*549px*/
+    width: 47%;
 }
 
 .member__title{
@@ -353,7 +364,9 @@ progress::-webkit-progress-value{
 }
 
 .posts__title{
-    font-size: 25px;
+    font: 25px "Oswald-Bold";
+    color: #3d3c3c;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -375,6 +388,12 @@ progress::-webkit-progress-value{
 }
 
 .contact__content{
+    /*background-image: url("../img/bg-city.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;*/
+    width: 100%;
     position: relative;
     border: 0;
 }
@@ -405,7 +424,7 @@ progress::-webkit-progress-value{
 }
 
 .feedback{
-    padding-top: 28px;
+    padding: 28px 10px 0;
     text-align: center;
     font-size: 20px;
     color: #fd5433;
@@ -419,8 +438,7 @@ progress::-webkit-progress-value{
 .feedback__name{
     box-sizing: border-box;
     padding: 21px 21px 19px;
-    width: 49%;
-    margin-right: 25px;
+    width: 48.5%;
     font-size: 20px;
     color: #fd5433;
 }
@@ -428,13 +446,15 @@ progress::-webkit-progress-value{
 .feedback__email{
     box-sizing: border-box;
     padding: 21px 21px 19px;
+    margin-left: 2.7%;
     width: 48%;
     font-size: 20px;
     color: #fd5433;
 }
 
 .feedback__message{
-    width: 96%;
+    box-sizing: border-box;
+    width: 100%;
     padding: 21px 21px 19px;
     margin-top: 28px;
     font-size: 20px;
@@ -442,19 +462,20 @@ progress::-webkit-progress-value{
 }
 
 .feedback__button{
-    margin-top: 24px;
     font: 26px "Oswald-Bold";
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 0 12px;
+    margin-top: 24px;
     border-bottom: 0;
     border-right: 0;
     border-left: 0;
-    width: 100%;
-    padding: 18px 0 14px;
     cursor: pointer;
 }
 
 .footer{
     margin-top: 83px;
-    border-top: 2px solid #fff;
+    border-top: 1px solid #fff;
 }
 
 .footer__content{
