@@ -21,7 +21,7 @@ body{
 }
 
 h1{
-	font-size: 70px;
+    font-size: 70px;
 }
 
 h2{
@@ -29,20 +29,20 @@ h2{
 }
 
 h3{
-	font-size: 30px;
+    font-size: 30px;
 }
 
 h4{
-	font-size: 26px;
+    font-size: 26px;
 }
 
 ul{
-	font-size: 17px;
+    font-size: 17px;
 }
 
 p{
-	margin-top: 5px;
-	margin-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 img{
