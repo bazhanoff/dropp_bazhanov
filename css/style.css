@@ -59,7 +59,7 @@ img{
 
 .header__layout{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
 }
 
@@ -291,7 +291,7 @@ img{
     content: '';
     position: absolute;
     left: 50%;
-    top: 280px;
+    top: 129%;
     transform: translateX(-50%);
     z-index: 1;
     border: 20px solid transparent;
