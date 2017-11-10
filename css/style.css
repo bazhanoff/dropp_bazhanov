@@ -183,20 +183,11 @@ a:focus, a:hover{
     padding-bottom: 81px;
 }
 
-.services__marketing{
-    margin-right: 0;
-}
-
 .services__title{
     margin-bottom: 38px;
     font-size: 30px;
     font-weight: 700;
     color: #474747;
-}
-
-.article__content{
-    font-family: "Oswald-Regular";
-    color: #121212;
 }
 
 .services__branding, .services__design, .services__marketing{
