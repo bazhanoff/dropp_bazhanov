@@ -1,5 +1,5 @@
 @font-face{
-    font-family: "Oswald-Regular";
+    font-family: "Oswald";
     src: url("../fonts/Oswald-Regular.woff") format("woff"),
          url("../fonts/Oswald-Regular.woff2") format("woff2");
     font-weight: 400;
@@ -7,7 +7,7 @@
 }
 
 @font-face{
-    font-family: "Oswald-Bold";
+    font-family: "Oswald";
     src: url("../fonts/Oswald-Bold.woff") format("woff"),
          url("../fonts/Oswald-Bold.woff2") format("woff2");
     font-weight: 700;
@@ -16,73 +16,58 @@
 
 body{
     margin: 0;
-    font: 16px Arial,Helvetica,sans-serif;
+    font-family: "Oswald",Arial,Helvetica,sans-serif;
     background: #fff;
 }
 
-h1{
-    font-size: 70px;
-}
-
-h2{
-    font-size: 32px;
-}
-
-h3{
-    font-size: 30px;
-}
-
-h4{
-    font-size: 26px;
-}
-
-ul{
-    font-size: 17px;
-}
-
-p{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 img{
-    display: inline-block;
     max-width: 100%;
     height: auto;
 }
 
 .main-container{
-    min-width:  768px;
+    min-width: 768px;
     max-width: 1170px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
-.header__layout{
+.header{
+    color: #474444;
+}
+
+.header__inner{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
+h1,h2,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title{
+    text-transform: uppercase;
+}
+
 .header__logo{
-    font: 70px "Oswald-Regular";
-    color: #474444;
-    max-width: 29%;
-    margin: 0;
+    font-size: 70px;
+    font-weight: 400;
 }
 
 .header__char{
     color: #fd5433;
 }
 
-.header__menu{
-    font: 17px "Oswald-Bold";
-    max-width: 70%;
+.menu{
+    color: #565656;
 }
 
 .menu__list{
-    margin: 0;
-    list-style: none;
-    padding: 47px 0 40px;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
 }
 
 .menu__list-item{
@@ -95,69 +80,68 @@ img{
     clear: left;
 }
 
-.menu__link{
-    padding: 47px 16px 40px;
+a{
     text-decoration: none;
-    color: #565656;
 }
 
-.menu__link:focus{
-    outline: 0;
-    background: #fd5433;
-    color: #fff;
+a:focus, a:hover{
+    color: #fd5433;
 }
 
-.menu__link:active, .menu__link:hover{
-    color: #fff;
-    background: #fd5433;
+.link{
+    color: inherit;
 }
 
-.menu__link_active{
+.menu__link{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 47px 15px;
+}
+
+.menu__link:hover, .menu__link:focus{
+    background-color: #fd5433;
     color: #fff;
-    background: #fd5433;
+    outline: none;
 }
 
 .home-container{
     position: relative;
-    padding-top: 229px;
-    padding-bottom: 354px;
+    background-color: #000;
+    opacity: .9;
 }
 
-.home__bg{
-    background-image: url("../img/Banner.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-	background-size: cover;
-    box-shadow: inset 0px 0px 0px 9999px rgba(0, 0, 0, .4);
-}
-
-.home__bg:after{
+.home-container:before{
     content: "";
     position: absolute;
-    top: 0%;
-    left: 0%;
     z-index: -1;
-    background-color: #515151;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
-    height: 800px;
+    height: 100%;
+    background-image: url("../img/Banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-.home__caption{
-    font: 120px "Oswald-Regular";
+.home__content{
     color: #fff;
-    margin-bottom: 57px;
     text-align: center;
+    padding-top: 229px;
+    padding-bottom: 334px;
+}
+
+.home__text{
+    text-transform: uppercase;
+    font-size: 120px;
 }
 
 .home__item{
-    text-align: center;
+    margin-top: 57px;
 }
 
 .home__button{
     padding: 13px 54px 11px;
-    font: 32px "Oswald-Bold";
+    font-size: 32px;
+    font-weight: 700;
     border-radius: 5px;
 }
 
@@ -167,42 +151,36 @@ img{
 
 .button{
     transition: all .5s ease-in-out;
-    text-decoration: none;
     color: #fff;
     background: #fd5433;
     border-top: 2px solid #ff6d51;
     box-shadow: 0 6px 4px -4px #000;
 }
 
-.button:active, .button:hover{
+.button:focus, .button:hover{
     background: #ff6d51;
+    color: #fff;
 }
 
 .section{
     margin-top: 38px;
 }
 
+.services{
+    border-bottom: 1px solid #474444;
+}
+
 .section__title{
-    font-family: "Oswald-Bold";
-    color: #fd5433;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #474444;
     text-align: center;
+    font-weight: 700;
+    color: #fd5433;
 }
 
 .section__content{
-    border-top: 1px solid #474444;
-}
-
-.services__content{
-    border-bottom: 1px solid #474444;
+    margin-top: 68px;
     padding-bottom: 81px;
-}
-
-.services__column{
-    display: inline-block;
-    vertical-align: bottom;
-    width: 32%;
-    text-align: center;
-    margin-right: 1%;
 }
 
 .services__marketing{
@@ -210,30 +188,10 @@ img{
 }
 
 .services__title{
-    margin-top: 38px;
-    font-family: "Oswald-Bold";
+    margin-bottom: 38px;
+    font-size: 30px;
+    font-weight: 700;
     color: #474747;
-}
-
-.services__title_pen{
-    padding-top: 200px;
-    background-image: url("../img/PEN.jpg");
-    background-position-x: center;
-    background-repeat: no-repeat;
-}
-
-.services__title_pc{
-    padding-top: 200px;
-    background-image: url("../img/PC.jpg");
-    background-position-x: center;
-    background-repeat: no-repeat;
-}
-
-.services__title_mic{
-    padding-top: 200px;
-    background-image: url("../img/Mic.jpg");
-    background-position-x: center;
-    background-repeat: no-repeat;
 }
 
 .article__content{
@@ -241,9 +199,47 @@ img{
     color: #121212;
 }
 
-.services__column-text{
-    width: 64.5%;
+.services__branding, .services__design, .services__marketing{
+    display: inline-block;
+    vertical-align: bottom;
+    width: 32%;
+    text-align: center;
+    padding-top: 200px;
+    margin-right: 1%;
+}
+
+.services__branding{
+    background-image: url("../img/PEN.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.services__design{
+    background-image: url("../img/PC.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.services__marketing{
+    background-image: url("../img/Mic.jpg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-right: 0;
+}
+
+.services__content{
+    width: 77%;
     margin: 0 auto;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: Arial;
+}
+
+p:last-child{
+    margin-bottom: 0;
 }
 
 .protfolio__content{
