@@ -46,7 +46,6 @@ img {
   padding: 0 2%;
 }
 .header {
-  font-family: "Oswald";
   color: #474444;
 }
 .header__container {
@@ -64,6 +63,7 @@ img {
   margin-bottom: 0;
 }
 .header__logo {
+  font-family: "Oswald";
   font-size: 70px;
   font-weight: 400;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ img {
 }
 .menu {
   font-size: 17px;
-  color: #565656;
+  font-family: "Oswald";
 }
 .menu__list {
   padding-left: 0;
@@ -153,8 +153,8 @@ a:hover {
   outline: 2px solid #fff;
 }
 .button {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
   font-weight: 700;
   color: #fff;
   background: #fd5433;
