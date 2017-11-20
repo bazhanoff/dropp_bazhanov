@@ -10,8 +10,37 @@
   font-weight: 700;
   font-style: normal;
 }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 22px;
+}
+p {
+  margin-bottom: 10px;
+  font-family: Arial;
+}
+p:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 .main-container {
-  position: relative;
+  min-width: 768px;
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 2%;
@@ -20,9 +49,18 @@
   color: #474444;
 }
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+}
+.title {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .header__logo {
   font-family: "Oswald";
@@ -53,13 +91,21 @@
   content: "";
   clear: left;
 }
+a {
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  color: #fd5433;
+}
+.link {
+  color: inherit;
+}
 .menu__link {
   display: inline-block;
   font-size: 17px;
   font-weight: 700;
   padding: 47px 15px;
-  color: #474444;
-  /*Временное решение*/
 }
 .menu__link:hover,
 .menu__link:focus {
@@ -69,55 +115,51 @@
 }
 .home {
   font-family: "Oswald";
-  color: #fff;
 }
-.home {
+.home-container {
   position: relative;
+  background-color: #000;
+  opacity: .9;
+}
+.home-container:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/Banner.jpg");
   background-size: cover;
   background-attachment: fixed;
-  text-align: center;
-  padding-top: 22.9rem;
-  padding-bottom: 33.4rem;
 }
-.home:before {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  opacity: .4;
+.home__content {
+  color: #fff;
+  text-align: center;
+  padding-top: 229px;
+  padding-bottom: 334px;
 }
 .home__text {
   text-transform: uppercase;
-  font-size: 12rem;
+  font-size: 120px;
 }
 .home__item {
-  margin-top: 5.7rem;
+  margin-top: 57px;
 }
 .home__button {
-  padding: 1.3rem 5.4rem 1.1rem;
-  font-size: 3.2rem;
-  border-radius: .5rem;
+  padding: 13px 54px 11px;
+  font-size: 32px;
+  border-radius: 5px;
 }
 .home__button:focus {
-  outline: .2rem solid #fff;
-}
-.title {
-  font-family: "Oswald";
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
+  outline: 2px solid #fff;
 }
 .button {
-  transition: background 0.3s ease-in;
-  font-family: "Oswald";
+  -webkit-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
   font-weight: 700;
   color: #fff;
   background: #fd5433;
   border-top: 2px solid #ff6d51;
+  -webkit-box-shadow: 0 6px 4px -4px #000;
   box-shadow: 0 6px 4px -4px #000;
 }
 .button:focus,
@@ -126,39 +168,37 @@
   color: #fff;
 }
 .section {
-  margin-top: 3.8rem;
+  margin-top: 38px;
 }
 .section__services {
-  padding-bottom: 8.1rem;
-  border-bottom: .1rem solid #828282;
+  padding-bottom: 81px;
+  border-bottom: 1px solid #474444;
 }
 .section__title {
-  margin-bottom: 3.6rem;
-  font-size: 3.2rem;
+  margin-bottom: 36px;
   text-align: center;
   font-weight: 700;
   color: #fd5433;
 }
 .section__content {
-  padding-top: 3.6rem;
-  border-top: .1rem solid #828282;
+  padding-top: 36px;
+  border-top: 1px solid #474444;
 }
-.section__services-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.section__services-name {
-  margin-bottom: 3.4rem;
-  font-size: 3rem;
+.section__name {
+  margin-bottom: 34px;
+  font-size: 30px;
+  font-weight: 700;
   color: #474747;
 }
 .section__branding,
 .section__design,
 .section__marketing {
+  display: inline-block;
+  vertical-align: bottom;
   width: 32%;
   text-align: center;
-  padding-top: 210px;
+  padding-top: 200px;
+  margin-right: 1%;
   background-position-x: center;
   background-repeat: no-repeat;
 }
@@ -172,86 +212,35 @@
   background-image: url("../img/Mic.jpg");
   margin-right: 0;
 }
-.section__services-info {
-  padding-left: 7%;
-  padding-right: 7%;
+.section__services-content {
+  width: 78%;
+  margin: 0 auto;
 }
 .protfolio__content {
   border-top: 0;
-  padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolio__link {
-  width: 16.65%;
 }
 .portfolio__img {
+  float: left;
+  width: 16.66%;
+}
+.portfolio__column:after {
   display: block;
-  width: 100%;
-  max-width: 100%;
-}
-@media screen and (min-width: 1401px) {
-  html {
-    font-size: 70%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1400px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 52.5%;
-  }
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 1.6rem;
-  background: #fff;
-}
-h1 {
-  font-size: 1.75rem;
-}
-h2 {
-  font-size: 1.625rem;
-}
-h3 {
-  font-size: 1.5rem;
-}
-h4 {
-  font-size: 1.375rem;
-}
-p {
-  margin-bottom: 1rem;
-  font-family: Arial;
-}
-p:last-child {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-a {
-  text-decoration: none;
-}
-a:focus,
-a:hover {
-  color: #fd5433;
+  content: "";
+  clear: left;
 }
 .about__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-top: 6.5rem;
-  margin-bottom: 6.5rem;
+  margin-top: 65px;
+  margin-bottom: 65px;
 }
 .about__content {
   position: relative;
-  padding: 6.6rem 0 4.5rem;
+  padding: 66px 0 45px;
   background-color: #fd5433;
   background-repeat: no-repeat;
   background-size: cover;
@@ -270,13 +259,14 @@ a:hover {
   position: absolute;
   left: 50%;
   top: 100%;
+  -webkit-transform: translate(-50%, 65px);
   transform: translate(-50%, 65px);
   z-index: 1;
-  border: 2rem solid transparent;
-  border-top: 4rem solid #fff;
+  border: 20px solid transparent;
+  border-top: 40px solid #fff;
 }
 .member__title {
-  font: 2.2rem "Oswald-Bold";
+  font: 22px "Oswald-Bold";
   color: inherit;
   margin: 0 0 38px;
 }
@@ -284,14 +274,14 @@ a:hover {
   font-family: Arial;
   color: #fff;
   width: 80%;
-  margin-top: 1.2rem;
+  margin-top: 12px;
 }
 .member__socials {
-  margin-top: 5.3rem;
+  margin-top: 53px;
 }
 .member__socials-link {
   text-decoration: none;
-  margin-right: 2rem;
+  margin-right: 20px;
 }
 .skill {
   display: inline-block;
@@ -306,20 +296,20 @@ a:hover {
   color: #fff;
 }
 .skill__column-bar {
-  padding-top: 5.9rem;
+  padding-top: 59px;
   width: 59%;
 }
 .skill__text:not(:nth-of-type(1)) {
   font-family: Arial;
   color: #fff;
   width: 80%;
-  margin-top: 1.2rem;
+  margin-top: 12px;
 }
 .skill__bar-row:not(:nth-of-type(1)) {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  margin-top: 1.3rem;
+  margin-top: 13px;
 }
 progress::-webkit-progress-bar {
   background: #fd5433;
@@ -330,7 +320,7 @@ progress::-webkit-progress-value {
 .skill__bar {
   display: inline-block;
   vertical-align: middle;
-  height: 1rem;
+  height: 10px;
   width: 75%;
   margin: 0;
   background: #fff;
@@ -340,106 +330,110 @@ progress::-webkit-progress-value {
   display: inline-block;
   vertical-align: top;
   width: 49%;
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 .posts__item-column {
   margin-right: 0;
 }
 .posts__article {
-  margin-top: 9rem;
+  margin-top: 90px;
 }
 .posts__content {
-  padding-bottom: 9.9rem;
-  border-bottom: .1rem solid #474444;
+  padding-bottom: 99px;
+  border-bottom: 1px solid #474444;
 }
 .posts__column-content {
   display: inline-block;
   vertical-align: top;
   width: 48%;
-  margin-left: 1.7rem;
+  margin-left: 17px;
   color: #686868;
 }
 .posts__title {
-  font-size: 25px;
+  font: 25px "Oswald-Bold";
   color: #3d3c3c;
   margin-top: 0;
   margin-bottom: 0;
 }
 .posts__date {
-  margin-top: 1rem;
-  padding-bottom: 1.8rem;
-  font: 1.5rem "Oswald-Bold";
+  margin-top: 10px;
+  padding-bottom: 18px;
+  font: 15px "Oswald-Bold";
 }
 .posts__month-hr {
-  padding-bottom: 1.4rem;
-  border-bottom: .4rem solid #fd5433;
+  padding-bottom: 14px;
+  border-bottom: 4px solid #fd5433;
 }
 .posts__column-text {
   width: 88%;
-  margin-top: 3rem;
-  font: 1.6rem Arial;
+  margin-top: 30px;
+  font: 16px Arial;
 }
 .contact__content {
   background-image: url("../img/bg-city.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3rem;
+  padding-bottom: 30px;
   width: 100%;
   position: relative;
   border: 0;
 }
 .feedback {
-  padding: 2.8rem 1rem 0;
+  padding: 28px 10px 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 20px;
   color: #fd5433;
 }
 ::-webkit-input-placeholder {
-  font-size: 2rem;
+  font-size: 20px;
   color: #fd5433;
 }
 .feedback__name {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2.1rem 2.1rem 1.9rem;
+  padding: 21px 21px 19px;
   width: 48.5%;
-  font-size: 2rem;
+  font-size: 20px;
   color: #fd5433;
 }
 .feedback__email {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2.1rem 2.1rem 1.9rem;
+  padding: 21px 21px 19px;
   margin-left: 2.7%;
   width: 48%;
-  font-size: 2rem;
+  font-size: 20px;
   color: #fd5433;
 }
 .feedback__message {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 2.1rem 2.1rem 1.9rem;
-  margin-top: 2.8rem;
-  font-size: 2rem;
+  padding: 21px 21px 19px;
+  margin-top: 28px;
+  font-size: 20px;
   color: #fd5433;
 }
 .feedback__button {
-  font-size: 2.6rem;
+  font: 26px "Oswald-Bold";
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 1.5rem 0 1.2rem;
-  margin-top: 2.4rem;
+  padding: 15px 0 12px;
+  margin-top: 24px;
   border-bottom: 0;
   border-right: 0;
   border-left: 0;
   cursor: pointer;
 }
 .footer {
-  margin-top: 8.3rem;
-  border-top: .1rem solid #fff;
+  margin-top: 83px;
+  border-top: 1px solid #fff;
 }
 .footer__content {
-  margin-top: 2rem;
+  margin-top: 20px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 18px;
   color: #fff;
 }
