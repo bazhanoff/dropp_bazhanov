@@ -1,5 +1,5 @@
 .menu{
-    font-size: 17px;
+    font-size: 1.7rem;
     font-family: "Oswald";
 }
 
@@ -22,9 +22,8 @@
 
 .menu__link{
     display: inline-block;
-    font-size: 17px;
     font-weight: 700;
-    padding: 47px 15px;
+    padding: 4.7rem 1.5rem;
     color: #474444; /*Временное решение*/
 }
 
@@ -32,4 +31,19 @@
     background-color: #fd5433;
     color: #fff;
     outline: none;
+}
+
+@media screen and (max-width: 399px){
+
+    .menu{
+        font-size: 3rem;
+    }
+
+    .menu__link{
+        display: inline-block;
+        font-weight: 700;
+        padding: 2.3rem 1.3rem;
+        color: #474444; /*Временное решение*/
+    }
+
 }

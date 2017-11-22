@@ -13,6 +13,24 @@
     padding-bottom: 33.4rem;
 }
 
+@media screen and (min-width: 401px) and (max-width: 850px){
+
+    .home{
+        padding-top: 15.3rem;
+        padding-bottom: 22.3rem;
+        // background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .home{
+        padding-top: 11.4rem;
+        padding-bottom: 16.7rem;
+        background-attachment: scroll;
+    }
+}
+
 .home:before{
     position: absolute;
     content: "";
@@ -27,6 +45,20 @@
 .home__text{
     text-transform: uppercase;
     font-size: 12rem;
+}
+
+@media screen and (min-width: 401px) and (max-width: 850px){
+
+    .home__text{
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .home__text{
+        font-size: 6rem;
+    }
 }
 
 .home__item{

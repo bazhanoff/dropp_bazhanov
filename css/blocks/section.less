@@ -33,9 +33,12 @@
 }
 
 .section__branding, .section__design, .section__marketing{
+    box-sizing: border-box;
     width: 32%;
+    padding-top: 21rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
     text-align: center;
-    padding-top: 210px;
     background-position-x: center;
     background-repeat: no-repeat;
 }
@@ -50,10 +53,44 @@
 
 .section__marketing{
     background-image: url("../img/Mic.jpg");
-    margin-right: 0;
 }
 
-.section__services-info{
-    padding-left: 7%;
-    padding-right: 7%;
+@media screen and (max-width: 767px){
+
+    .section__branding, .section__design, .section__marketing{
+         padding-top: 25rem;
+    }
+}
+
+@media screen and (max-width: 554px){
+
+    .section__branding, .section__design, .section__marketing{
+        width: 100%;
+        padding-left: 4.3rem;
+        padding-right: 4.3rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .section__marketing{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 399px){
+
+    .section__title{
+        font-size: 5.3rem;
+    }
+
+    .section__branding, .section__design, .section__marketing{
+        padding-top: 32rem;
+    }
+
+    .section__services-name{
+        font-size: 4.3rem;
+    }
+
+    .section__services-info{
+        font-size: 3rem;
+    }
 }
