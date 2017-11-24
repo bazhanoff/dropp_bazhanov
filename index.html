@@ -37,7 +37,7 @@
             </div>
         </header>
         <div class="home" id="home">
-            <div class="main-container">
+            <div class="main-container home__content">
                 <span class="home__text">
                     come,STAY FOR A COFFEE!
                 </span>
@@ -138,40 +138,94 @@
                 </div>
             </section>
             <section class="section about" id="about">
-                <div class="main-container">
-                    <h2 class="section__title title">
-                        ABOUT US
-                    </h2>
-                </div>
-                <div class="section__content member">
-                        <div class="about__header main-container">
-                                <a class="member__link" href="#">
-                                    <img src="img/member1.png" alt="Elizabeth Stevens">
-                                </a>
-                                <a class="member__link member__link_active" href="#">
-                                    <img src="img/member2.png" alt="John Smith">
-                                </a>
-                                <a class="member__link" href="#">
-                                    <img src="img/member3.png" alt="Diana Paterns">
-                                </a>
-                                <a class="member__link" href="#">
-                                    <img src="img/member4.png" alt="Kate Eastwood">
-                                </a>
-                        </div>
-                        <div class="about__content">
-                            <div class="main-container">
-                                <article class="article member__info">
-                                    <h2 class="article__title member__title">
-                                        John Smith - Lead Graphic Artist
-                                    </h2>
-                                    <div class="article__content member__text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                        laborum.
+                <h2 class="section__title title">
+                    ABOUT US
+                </h2>
+                <div class="section__content">
+                    <div class="main-container about__tabs">
+                        <input id="Elizabeth-Stevens" type="radio" class="about__switch">
+                            <label for="Elizabeth-Stevens">
+                                <img src="img/member1.png" alt="Elizabeth Stevens">
+                            </label>
+                        <input id="John-Smith" type="radio" class="about__switch" checked>
+                            <label for="John-Smith">
+                                <img src="img/member2.png" alt="John Smith">
+                            </label>
+                        <input id="Diana-Paterns" type="radio" class="about__switch">
+                            <label for="Diana-Paterns">
+                                <img src="img/member3.png" alt="Diana Paterns">
+                            </label>
+                        <input id="Kate-Eastwood" type="radio" class="about__switch">
+                            <label for="Kate-Eastwood">
+                                <img src="img/member4.png" alt="Kate Eastwood">
+                            </label>
+                    </div>
+                        <div class="about__info">
+                            <div class="main-container about__container">
+                                <article class="about__info-container">
+                                    <div class="about__Elizabeth-Stevens">
+                                        <h3 class="about__info-title title">
+                                            Elizabeth Stevens - Lead Graphic Artist
+                                        </h3>
+                                        <div class="about__description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                                laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="about__John-Smith">
+                                        <h3 class="about__info-title title">
+                                            John Smith - Designer
+                                        </h3>
+                                        <div class="about__description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                                laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="about__Diana-Paterns">
+                                        <h3 class="about__info-title title">
+                                            Diana Paterns - Lead Graphic Designer
+                                        </h3>
+                                        <div class="about__description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                                laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="about__Kate-Eastwood">
+                                        <h3 class="about__info-title title">
+                                            Kate Eastwood - Developer of UI
+                                        </h3>
+                                        <div class="about__description">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                                laborum.
+                                            </p>
+                                        </div>
                                     </div>
                                     <div class="member__socials">
                                         <a class="member__socials-link" href="#">
@@ -191,61 +245,46 @@
                                         </a>
                                     </div>
                                 </article>
-                                <article class="article skill">
-                                    <div class="skill__column">
-                                        <h2 class="article__title member__title">
+                                <article class="about__info-container">
+                                        <h4 class="about__info-title title">
                                             Skills
-                                        </h2>
-                                        <div class="article__content">
-                                            <div class="member__text skill__text">
+                                        </h4>
+                                        <div class="about__skills">
+                                            <div class="skill">
                                                 <span class="skill__name">PHOTOSHOP</span>
+                                                <progress class="skill__bar" max="100" value="100">
+                                                </progress>
+                                                <span class="skill__percent">100%</span>
                                             </div>
-                                            <div class="member__text skill__text">
+                                            <div class="skill">
                                                 <span class="skill__name">ILLUSTRATOR</span>
+                                                <progress class="skill__bar" max="100" value="98">
+                                                </progress>
+                                                <span class="skill__percent">98%</span>
                                             </div>
-                                            <div class="member__text skill__text">
+                                            <div class="skill">
                                                 <span class="skill__name">WORDPRESS</span>
+                                                <progress class="skill__bar" max="100" value="67">
+                                                </progress>
+                                                <span class="skill__percent">67%</span>
                                             </div>
-                                            <div class="member__text skill__text">
+                                            <div class="skill">
                                                 <span class="skill__name">JOOMLA</span>
+                                                <progress class="skill__bar" max="100" value="70">
+                                                </progress>
+                                                <span class="skill__percent">70%</span>
                                             </div>
-                                            <div class="member__text skill__text">
+                                            <div class="skill">
                                                 <span class="skill__name">JQUERY</span>
+                                                <progress class="skill__bar" max="100" value="58">
+                                                </progress>
+                                                <span class="skill__percent">58%</span>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="skill__column skill__column-bar">
-                                        <div class="skill__bar-row">
-                                            <progress class="skill__bar skill__bar-100" max="100" value="100">
-                                            </progress>
-                                            <span class="skill__percent">100%</span>
-                                        </div>
-                                        <div class="skill__bar-row">
-                                            <progress class="skill__bar skill__bar-98" max="100" value="98">
-                                            </progress>
-                                            <span class="skill__percent">98%</span>
-                                        </div>
-                                        <div class="skill__bar-row">
-                                            <progress class="skill__bar skill__bar-67" max="100" value="67">
-                                            </progress>
-                                            <span class="skill__percent">67%</span>
-                                        </div>
-                                        <div class="skill__bar-row">
-                                            <progress class="skill__bar skill__bar-70" max="100" value="70">
-                                            </progress>
-                                            <span class="skill__percent">70%</span>
-                                        </div>
-                                        <div class="skill__bar-row">
-                                            <progress class="skill__bar skill__bar-58" max="100" value="58">
-                                            </progress>
-                                            <span class="skill__percent">58%</span>
-                                        </div>
-                                    </div>
                                 </article>
                             </div>
                         </div>
-                </div>
-            </section>
+                </section>
             <section class="section posts" id="posts">
                 <div class="main-container">
                     <h2 class="section__title title">

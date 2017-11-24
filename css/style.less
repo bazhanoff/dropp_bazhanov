@@ -23,6 +23,8 @@
 @import "blocks/button.less";
 @import "blocks/section.less";
 @import "blocks/portfolio.less";
+@import "blocks/about.less";
+@import "blocks/skill.less";
 
 @media screen and (min-width: 1401px){
 
@@ -97,116 +99,6 @@ a{
 
 a:focus, a:hover{
     color: #fd5433;
-}
-
-.about__header{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 6.5rem;
-    margin-bottom: 6.5rem;
-}
-
-.about__content{
-    position: relative;
-    padding: 6.6rem 0 4.5rem;
-    background-color: #fd5433;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.member__info{
-    display: inline-block;
-    vertical-align: top;
-    color: #fff;
-    width: 47%;
-}
-
-.member__link_active{
-    position: relative;
-}
-
-.member__link_active:after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-50%, 65px);
-    z-index: 1;
-    border: 2rem solid transparent;
-    border-top: 4rem solid #fff;
-}
-
-.member__title{
-    font: 2.2rem "Oswald-Bold";
-    color: inherit;
-    margin: 0 0 38px;
-}
-
-.member__text{
-    font-family: Arial;
-    color: #fff;
-    width: 80%;
-    margin-top: 1.2rem;
-}
-
-.member__socials{
-    margin-top: 5.3rem;
-}
-
-.member__socials-link{
-    text-decoration: none;
-    margin-right: 2rem;
-}
-
-.skill{
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    color: #fff;
-}
-
-.skill__column{
-    display: inline-block;
-    vertical-align: top;
-    width: 30%;
-    color: #fff;
-}
-
-.skill__column-bar{
-    padding-top: 5.9rem;
-    width: 59%;
-}
-
-.skill__text:not(:nth-of-type(1)){
-    font-family: Arial;
-    color: #fff;
-    width: 80%;
-    margin-top: 1.2rem;
-}
-
-.skill__bar-row:not(:nth-of-type(1)){
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    margin-top: 1.3rem;
-}
-
-progress::-webkit-progress-bar{
-    background: #fd5433;
-}
-
-progress::-webkit-progress-value{
-    background: #fff;
-}
-
-.skill__bar{
-    display: inline-block;
-    vertical-align: middle;
-    height: 1rem;
-    width: 75%;
-    margin: 0;
-    background: #fff;
-    color: #fff;
 }
 
 .posts__column{

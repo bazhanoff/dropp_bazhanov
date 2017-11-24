@@ -11,21 +11,20 @@
   font-style: normal;
 }
 .main-container {
-  position: relative;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 0 5%;
 }
-@media screen and (min-width: 768px) and (max-width: 1170) {
+@media screen and (min-width: 768px) and (max-width: 1170px) {
   .main-container {
     max-width: 1170px;
   }
 }
-@media screen and (max-width: 767) {
+@media screen and (max-width: 767px) {
   .main-container {
     max-width: 600px;
   }
 }
-@media screen and (max-width: 400) {
+@media screen and (max-width: 400px) {
   .main-container {
     max-width: 300px;
   }
@@ -34,13 +33,8 @@
   color: #474444;
 }
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .header__logo {
@@ -133,6 +127,9 @@
   background-color: #000;
   opacity: .4;
 }
+.home__content {
+  position: relative;
+}
 .home__text {
   text-transform: uppercase;
   font-size: 12rem;
@@ -165,14 +162,12 @@
   margin-bottom: 0;
 }
 .button {
-  -webkit-transition: background 0.3s ease-in;
   transition: background 0.3s ease-in;
   font-family: "Oswald";
   font-weight: 700;
   color: #fff;
   background: #fd5433;
   border-top: 2px solid #ff6d51;
-  -webkit-box-shadow: 0 6px 4px -4px #000;
   box-shadow: 0 6px 4px -4px #000;
 }
 .button:focus,
@@ -199,13 +194,8 @@
   border-top: .1rem solid #828282;
 }
 .section__services-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .section__services-name {
@@ -216,7 +206,6 @@
 .section__branding,
 .section__design,
 .section__marketing {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 32%;
   padding-top: 21rem;
@@ -274,10 +263,7 @@
 .protfolio__content {
   border-top: 0;
   padding-top: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .portfolio__link {
@@ -285,8 +271,70 @@
 }
 .portfolio__img {
   display: block;
-  width: 100%;
-  max-width: 100%;
+}
+.about__tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.6rem;
+}
+.about__info {
+  position: relative;
+  padding: 6.7rem 0 4.3rem;
+  background-color: #fd5433;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__info-container {
+  width: 44%;
+}
+.about__switch,
+.about__Elizabeth-Stevens,
+.about__Diana-Paterns,
+.about__Kate-Eastwood {
+  display: none;
+}
+.about__info-title {
+  font-size: 2.2rem;
+  text-transform: none;
+  margin-bottom: 5.3rem;
+}
+.about__description {
+  margin-bottom: 5.1rem;
+}
+.skill {
+  display: flex;
+  align-items: center;
+}
+.skill:not(:first-child) {
+  margin-top: 1.3rem;
+}
+.skill__name {
+  width: 35%;
+}
+.skill__bar[value]::-webkit-progress-value {
+  background: #fff;
+}
+.skill__bar[value]::-webkit-progress-bar {
+  background: #fd5433;
+}
+.skill__bar[value]::-moz-progress-bar {
+  background: #fff;
+}
+.skill__bar {
+  height: 1rem;
+  width: 50%;
+  margin: 0;
+  background: #fd5433;
+  border: none;
+  color: #fff;
+}
+.skill__percent {
+  margin-left: 1.8em;
 }
 @media screen and (min-width: 1401px) {
   html {
@@ -345,104 +393,6 @@ a {
 a:focus,
 a:hover {
   color: #fd5433;
-}
-.about__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin-top: 6.5rem;
-  margin-bottom: 6.5rem;
-}
-.about__content {
-  position: relative;
-  padding: 6.6rem 0 4.5rem;
-  background-color: #fd5433;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.member__info {
-  display: inline-block;
-  vertical-align: top;
-  color: #fff;
-  width: 47%;
-}
-.member__link_active {
-  position: relative;
-}
-.member__link_active:after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  -webkit-transform: translate(-50%, 65px);
-  transform: translate(-50%, 65px);
-  z-index: 1;
-  border: 2rem solid transparent;
-  border-top: 4rem solid #fff;
-}
-.member__title {
-  font: 2.2rem "Oswald-Bold";
-  color: inherit;
-  margin: 0 0 38px;
-}
-.member__text {
-  font-family: Arial;
-  color: #fff;
-  width: 80%;
-  margin-top: 1.2rem;
-}
-.member__socials {
-  margin-top: 5.3rem;
-}
-.member__socials-link {
-  text-decoration: none;
-  margin-right: 2rem;
-}
-.skill {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  color: #fff;
-}
-.skill__column {
-  display: inline-block;
-  vertical-align: top;
-  width: 30%;
-  color: #fff;
-}
-.skill__column-bar {
-  padding-top: 5.9rem;
-  width: 59%;
-}
-.skill__text:not(:nth-of-type(1)) {
-  font-family: Arial;
-  color: #fff;
-  width: 80%;
-  margin-top: 1.2rem;
-}
-.skill__bar-row:not(:nth-of-type(1)) {
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-  margin-top: 1.3rem;
-}
-progress::-webkit-progress-bar {
-  background: #fd5433;
-}
-progress::-webkit-progress-value {
-  background: #fff;
-}
-.skill__bar {
-  display: inline-block;
-  vertical-align: middle;
-  height: 1rem;
-  width: 75%;
-  margin: 0;
-  background: #fff;
-  color: #fff;
 }
 .posts__column {
   display: inline-block;
@@ -508,7 +458,6 @@ progress::-webkit-progress-value {
   color: #fd5433;
 }
 .feedback__name {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 2.1rem 2.1rem 1.9rem;
   width: 48.5%;
@@ -516,7 +465,6 @@ progress::-webkit-progress-value {
   color: #fd5433;
 }
 .feedback__email {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 2.1rem 2.1rem 1.9rem;
   margin-left: 2.7%;
@@ -525,7 +473,6 @@ progress::-webkit-progress-value {
   color: #fd5433;
 }
 .feedback__message {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 2.1rem 2.1rem 1.9rem;
@@ -535,7 +482,6 @@ progress::-webkit-progress-value {
 }
 .feedback__button {
   font-size: 2.6rem;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
   padding: 1.5rem 0 1.2rem;
