@@ -292,7 +292,7 @@
 .about__info-container {
   width: 44%;
 }
-.about__tab-activation:hover {
+.about__tab:hover {
   cursor: pointer;
 }
 .about__tab-img {
