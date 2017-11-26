@@ -292,11 +292,24 @@
 .about__info-container {
   width: 44%;
 }
+.about__tab-activation:hover {
+  cursor: pointer;
+}
+.about__tab-img {
+  display: block;
+}
 .about__switch,
 .about__Elizabeth-Stevens,
 .about__Diana-Paterns,
-.about__Kate-Eastwood {
+.about__Kate-Eastwood,
+.about__John-Smith {
   display: none;
+}
+#John-Smith:checked ~ .about__John-Smith,
+#Elizabeth-Stevens:checked ~ .about__Elizabeth-Stevens,
+#Diana-Paterns:checked ~ .about__Diana-Paterns,
+#Kate-Eastwood:checked ~ .about__Kate-Eastwood {
+  display: block;
 }
 .about__info-title {
   font-size: 2.2rem;

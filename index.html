@@ -143,89 +143,261 @@
         </h2>
         <div class="section__content">
             <div class="main-container about__tabs">
-                <input id="Elizabeth-Stevens" type="radio" class="about__switch">
-                <label for="Elizabeth-Stevens">
-                    <img src="img/member1.png" alt="Elizabeth Stevens">
+                <label class="about__tab-activation" for="Elizabeth-Stevens">
+                    <img class="about__tab-img" src="img/member1.png" alt="Elizabeth Stevens">
                 </label>
-                <input id="John-Smith" type="radio" class="about__switch" checked>
-                <label for="John-Smith">
-                    <img src="img/member2.png" alt="John Smith">
+                <label class="about__tab-activation" for="John-Smith">
+                    <img class="about__tab-img" src="img/member2.png" alt="John Smith">
                 </label>
-                <input id="Diana-Paterns" type="radio" class="about__switch">
-                <label for="Diana-Paterns">
-                    <img src="img/member3.png" alt="Diana Paterns">
+                <label class="about__tab-activation" for="Diana-Paterns">
+                    <img class="about__tab-img" src="img/member3.png" alt="Diana Paterns">
                 </label>
-                <input id="Kate-Eastwood" type="radio" class="about__switch">
-                <label for="Kate-Eastwood">
-                    <img src="img/member4.png" alt="Kate Eastwood">
+                <label class="about__tab-activation" for="Kate-Eastwood">
+                    <img class="about__tab-img" src="img/member4.png" alt="Kate Eastwood">
                 </label>
             </div>
-            <div class="about__info">
+            <input id="Elizabeth-Stevens" name="tabs" type="radio" class="about__switch">
+            <input id="John-Smith" name="tabs" type="radio" class="about__switch" checked>
+            <input id="Diana-Paterns" name="tabs" type="radio" class="about__switch">
+            <input id="Kate-Eastwood" name="tabs" type="radio" class="about__switch">
+            <div class="about__info about__John-Smith">
                 <div class="main-container about__container">
                     <article class="about__info-container">
-                        <div class="about__Elizabeth-Stevens">
-                            <h3 class="about__info-title title">
-                                Elizabeth Stevens - Lead Graphic Artist
-                            </h3>
-                            <div class="about__description">
-                                <p lang="la">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
+                        <h3 class="about__info-title title">
+                            John Smith - Lead Graphic Designer
+                        </h3>
+                        <div class="about__description">
+                            <p lang="la">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </p>
+                        </div>
+                        <div class="about__social-links">
+                            <a class="about__social-link about__social-link_fb" href="#">
+                                Facebook
+                            </a>
+                            <a class="about__social-link about__social-link_gp" href="#">
+                                Google+
+                            </a>
+                            <a class="about__social-link about__social-link_vm" href="#">
+                                Vimeo
+                            </a>
+                            <a class="about__social-link about__social-link_dl" href="#">
+                                Dribbble
+                            </a>
+                            <a class="about__social-link about__social-link_yt" href="#">
+                                Youtube
+                            </a>
+                        </div>
+                    </article>
+                    <article class="about__info-container">
+                        <h4 class="about__info-title title">
+                            Skills
+                        </h4>
+                        <div class="about__skills">
+                            <div class="about__skill skill">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__bar" max="100" value="100">
+                                </progress>
+                                <span class="skill__percent">100%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__bar" max="100" value="98">
+                                </progress>
+                                <span class="skill__percent">98%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__bar" max="100" value="67">
+                                </progress>
+                                <span class="skill__percent">67%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__bar" max="100" value="70">
+                                </progress>
+                                <span class="skill__percent">70%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__bar" max="100" value="58">
+                                </progress>
+                                <span class="skill__percent">58%</span>
                             </div>
                         </div>
-                        <div class="about__John-Smith">
-                            <h3 class="about__info-title title">
-                                John Smith - Designer
-                            </h3>
-                            <div class="about__description">
-                                <p lang="la">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
+                    </article>
+                </div>
+            </div>
+            <div class="about__info about__Elizabeth-Stevens">
+                <div class="main-container about__container">
+                    <article class="about__info-container">
+                        <h3 class="about__info-title title">
+                            Elizabeth-Stevens - Graphic Designer
+                        </h3>
+                        <div class="about__description">
+                            <p lang="la">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </p>
+                        </div>
+                        <div class="about__social-links">
+                            <a class="about__social-link about__social-link_fb" href="#">
+                                Facebook
+                            </a>
+                            <a class="about__social-link about__social-link_gp" href="#">
+                                Google+
+                            </a>
+                            <a class="about__social-link about__social-link_vm" href="#">
+                                Vimeo
+                            </a>
+                            <a class="about__social-link about__social-link_dl" href="#">
+                                Dribbble
+                            </a>
+                            <a class="about__social-link about__social-link_yt" href="#">
+                                Youtube
+                            </a>
+                        </div>
+                    </article>
+                    <article class="about__info-container">
+                        <h4 class="about__info-title title">
+                            Skills
+                        </h4>
+                        <div class="about__skills">
+                            <div class="about__skill skill">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__bar" max="100" value="100">
+                                </progress>
+                                <span class="skill__percent">100%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__bar" max="100" value="98">
+                                </progress>
+                                <span class="skill__percent">98%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__bar" max="100" value="67">
+                                </progress>
+                                <span class="skill__percent">67%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__bar" max="100" value="70">
+                                </progress>
+                                <span class="skill__percent">70%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__bar" max="100" value="58">
+                                </progress>
+                                <span class="skill__percent">58%</span>
                             </div>
                         </div>
-                        <div class="about__Diana-Paterns">
-                            <h3 class="about__info-title title">
-                                Diana Paterns - Lead Graphic Designer
-                            </h3>
-                            <div class="about__description">
-                                <p lang="la">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
+                    </article>
+                </div>
+            </div>
+            <div class="about__info about__Diana-Paterns">
+                <div class="main-container about__container">
+                    <article class="about__info-container">
+                        <h3 class="about__info-title title">
+                            Diana-Paterns - UX Specialist
+                        </h3>
+                        <div class="about__description">
+                            <p lang="la">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </p>
+                        </div>
+                        <div class="about__social-links">
+                            <a class="about__social-link about__social-link_fb" href="#">
+                                Facebook
+                            </a>
+                            <a class="about__social-link about__social-link_gp" href="#">
+                                Google+
+                            </a>
+                            <a class="about__social-link about__social-link_vm" href="#">
+                                Vimeo
+                            </a>
+                            <a class="about__social-link about__social-link_dl" href="#">
+                                Dribbble
+                            </a>
+                            <a class="about__social-link about__social-link_yt" href="#">
+                                Youtube
+                            </a>
+                        </div>
+                    </article>
+                    <article class="about__info-container">
+                        <h4 class="about__info-title title">
+                            Skills
+                        </h4>
+                        <div class="about__skills">
+                            <div class="about__skill skill">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__bar" max="100" value="100">
+                                </progress>
+                                <span class="skill__percent">100%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__bar" max="100" value="98">
+                                </progress>
+                                <span class="skill__percent">98%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__bar" max="100" value="67">
+                                </progress>
+                                <span class="skill__percent">67%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__bar" max="100" value="70">
+                                </progress>
+                                <span class="skill__percent">70%</span>
+                            </div>
+                            <div class="about__skill skill">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__bar" max="100" value="58">
+                                </progress>
+                                <span class="skill__percent">58%</span>
                             </div>
                         </div>
-                        <div class="about__Kate-Eastwood">
-                            <h3 class="about__info-title title">
-                                Kate Eastwood - Developer of UI
-                            </h3>
-                            <div class="about__description">
-                                <p lang="la">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                    laborum.
-                                </p>
-                            </div>
+                    </article>
+                </div>
+            </div>
+            <div class="about__info about__Kate-Eastwood">
+                <div class="main-container about__container">
+                    <article class="about__info-container">
+                        <h3 class="about__info-title title">
+                            Kate-Eastwood - UI Senior Designer
+                        </h3>
+                        <div class="about__description">
+                            <p lang="la">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.
+                            </p>
                         </div>
                         <div class="about__social-links">
                             <a class="about__social-link about__social-link_fb" href="#">
