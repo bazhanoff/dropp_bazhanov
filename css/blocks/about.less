@@ -20,8 +20,13 @@
     width: 44%;
 }
 
-.about__tab:hover{
-    cursor: pointer;
+.about__tab{
+    transition: opacity .4s ease-in;
+
+    &:hover{
+        cursor: pointer;
+        opacity: .7;
+    }
 }
 
 .about__tab-img{

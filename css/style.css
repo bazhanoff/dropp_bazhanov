@@ -71,7 +71,7 @@
   font-weight: 700;
   padding: 4.7rem 1.5rem;
   color: #474444;
-  /*Временное решение*/
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 .menu__link:hover,
 .menu__link:focus {
@@ -88,7 +88,6 @@
     font-weight: 700;
     padding: 2.3rem 1.3rem;
     color: #474444;
-    /*Временное решение*/
   }
 }
 .home {
@@ -162,17 +161,16 @@
   margin-bottom: 0;
 }
 .button {
-  transition: background 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
   font-family: "Oswald";
   font-weight: 700;
   color: #fff;
   background: #fd5433;
-  border-top: 2px solid #ff6d51;
-  box-shadow: 0 6px 4px -4px #000;
+  box-shadow: inset 0 4px 12px -3px #fff, 0 6px 10px -3px #000;
 }
 .button:focus,
 .button:hover {
-  background: #ff6d51;
+  background-color: #ff6d51;
   color: #fff;
 }
 .section {
@@ -268,6 +266,11 @@
 }
 .portfolio__link {
   width: 16.65%;
+  transition: opacity 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+.portfolio__link:hover {
+  opacity: .7;
+  box-shadow: 0 0.5rem 2rem #000, 0 -0.5rem 2rem #000, 0.5rem 0 2rem #000, -0.5rem 0 2rem #000;
 }
 .portfolio__img {
   display: block;
@@ -290,8 +293,12 @@
 .about__info-container {
   width: 44%;
 }
+.about__tab {
+  transition: opacity 0.4s ease-in;
+}
 .about__tab:hover {
   cursor: pointer;
+  opacity: .7;
 }
 .about__tab-img {
   display: block;
@@ -522,9 +529,7 @@ a:hover {
   width: 100%;
   padding: 1.5rem 0 1.2rem;
   margin-top: 2.4rem;
-  border-bottom: 0;
-  border-right: 0;
-  border-left: 0;
+  border: none;
   cursor: pointer;
 }
 .footer {

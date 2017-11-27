@@ -7,6 +7,16 @@
 
 .portfolio__link{
     width: 16.65%;
+    transition: opacity .3s ease-in,
+                box-shadow .3s ease-in;
+
+    &:hover{
+        opacity: .7;
+        box-shadow: 0 .5rem 2rem #000,
+                    0 -.5rem 2rem #000,
+                    .5rem 0 2rem #000,
+                    -.5rem 0 2rem #000;
+    }
 }
 
 .portfolio__img{
