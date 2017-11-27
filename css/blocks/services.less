@@ -1,0 +1,75 @@
+.services__content{
+    padding-top: 6.5rem;
+}
+
+.services__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__name{
+    margin-bottom: 3.4rem;
+    font-size: 3rem;
+    color: #474747;
+}
+
+.services__branding, .services__design, .services__marketing{
+    box-sizing: border-box;
+    width: 32%;
+    padding-top: 21rem;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    text-align: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.services__branding{
+    background-image: url("../img/PEN.jpg");
+}
+
+.services__design{
+    background-image: url("../img/PC.jpg");
+}
+
+.services__marketing{
+    background-image: url("../img/Mic.jpg");
+}
+
+
+@media screen and (max-width: 767px){
+
+    .services__branding, .services__design, .services__marketing{
+         padding-top: 25rem;
+    }
+}
+
+@media screen and (max-width: 554px){
+
+    .services__branding, .services__design, .services__marketing{
+        width: 100%;
+        padding-left: 4.3rem;
+        padding-right: 4.3rem;
+        margin-bottom: 3.6rem;
+    }
+
+    .services__marketing{
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 399px){
+    
+    .services__branding, .services__design, .services__marketing{
+        padding-top: 32rem;
+    }
+
+    .services__name{
+        font-size: 4.3rem;
+    }
+
+    .services__info{
+        font-size: 3rem;
+    }
+}

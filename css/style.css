@@ -188,22 +188,33 @@
   color: #fd5433;
 }
 .section__content {
-  padding-top: 3.6rem;
   border-top: .1rem solid #828282;
 }
-.section__services-content {
+.section__posts {
+  padding-bottom: 9.9rem;
+  border-bottom: .1rem solid #474444;
+}
+@media screen and (max-width: 399px) {
+  .section__title {
+    font-size: 5.3rem;
+  }
+}
+.services__content {
+  padding-top: 6.5rem;
+}
+.services__container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.section__services-name {
+.services__name {
   margin-bottom: 3.4rem;
   font-size: 3rem;
   color: #474747;
 }
-.section__branding,
-.section__design,
-.section__marketing {
+.services__branding,
+.services__design,
+.services__marketing {
   box-sizing: border-box;
   width: 32%;
   padding-top: 21rem;
@@ -213,48 +224,45 @@
   background-position-x: center;
   background-repeat: no-repeat;
 }
-.section__branding {
+.services__branding {
   background-image: url("../img/PEN.jpg");
 }
-.section__design {
+.services__design {
   background-image: url("../img/PC.jpg");
 }
-.section__marketing {
+.services__marketing {
   background-image: url("../img/Mic.jpg");
 }
 @media screen and (max-width: 767px) {
-  .section__branding,
-  .section__design,
-  .section__marketing {
+  .services__branding,
+  .services__design,
+  .services__marketing {
     padding-top: 25rem;
   }
 }
 @media screen and (max-width: 554px) {
-  .section__branding,
-  .section__design,
-  .section__marketing {
+  .services__branding,
+  .services__design,
+  .services__marketing {
     width: 100%;
     padding-left: 4.3rem;
     padding-right: 4.3rem;
     margin-bottom: 3.6rem;
   }
-  .section__marketing {
+  .services__marketing {
     margin-bottom: 0;
   }
 }
 @media screen and (max-width: 399px) {
-  .section__title {
-    font-size: 5.3rem;
-  }
-  .section__branding,
-  .section__design,
-  .section__marketing {
+  .services__branding,
+  .services__design,
+  .services__marketing {
     padding-top: 32rem;
   }
-  .section__services-name {
+  .services__name {
     font-size: 4.3rem;
   }
-  .section__services-info {
+  .services__info {
     font-size: 3rem;
   }
 }
@@ -275,10 +283,13 @@
 .portfolio__img {
   display: block;
 }
+.about__content {
+  padding-top: 6.6rem;
+}
 .about__tabs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3.6rem;
+  margin-bottom: 6.6rem;
 }
 .about__info {
   position: relative;
@@ -331,6 +342,9 @@
   height: 2.6rem;
   text-indent: -9999px;
 }
+.about__social-link:hover {
+  opacity: .7;
+}
 .about__social-link:not(:last-child) {
   margin-right: 2rem;
 }
@@ -378,6 +392,45 @@
 }
 .skill__percent {
   margin-left: 1.8em;
+}
+.posts__content {
+  padding-top: 9.9rem;
+}
+.posts__column {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  margin-right: 1rem;
+}
+.posts__item-column {
+  margin-right: 0;
+}
+.posts__column-content {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin-left: 1.7rem;
+  color: #686868;
+}
+.posts__title {
+  font-size: 25px;
+  color: #3d3c3c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.posts__date {
+  margin-top: 1rem;
+  padding-bottom: 1.8rem;
+  font: 1.5rem "Oswald-Bold";
+}
+.posts__month-hr {
+  padding-bottom: 1.4rem;
+  border-bottom: .4rem solid #fd5433;
+}
+.posts__column-text {
+  width: 88%;
+  margin-top: 3rem;
+  font: 1.6rem Arial;
 }
 @media screen and (min-width: 1401px) {
   html {
@@ -436,49 +489,6 @@ a {
 a:focus,
 a:hover {
   color: #fd5433;
-}
-.posts__column {
-  display: inline-block;
-  vertical-align: top;
-  width: 49%;
-  margin-right: 1rem;
-}
-.posts__item-column {
-  margin-right: 0;
-}
-.posts__article {
-  margin-top: 9rem;
-}
-.posts__content {
-  padding-bottom: 9.9rem;
-  border-bottom: .1rem solid #474444;
-}
-.posts__column-content {
-  display: inline-block;
-  vertical-align: top;
-  width: 48%;
-  margin-left: 1.7rem;
-  color: #686868;
-}
-.posts__title {
-  font-size: 25px;
-  color: #3d3c3c;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.posts__date {
-  margin-top: 1rem;
-  padding-bottom: 1.8rem;
-  font: 1.5rem "Oswald-Bold";
-}
-.posts__month-hr {
-  padding-bottom: 1.4rem;
-  border-bottom: .4rem solid #fd5433;
-}
-.posts__column-text {
-  width: 88%;
-  margin-top: 3rem;
-  font: 1.6rem Arial;
 }
 .contact__content {
   background-image: url("../img/bg-city.jpg");
