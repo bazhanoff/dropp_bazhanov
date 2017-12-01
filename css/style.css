@@ -51,7 +51,7 @@
 }
 @media screen and (max-width: 783px) {
   .header__menu {
-    display: block;
+    display: inline-block;
     color: #fff;
     background: #fd5433;
   }
