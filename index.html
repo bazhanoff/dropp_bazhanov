@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script type="text/javascript">
+        $(".header__menu").click(function(){
+            $(this).closest("body").toggleClass("active");
+        });
+    </script>
     <header class="header">
         <div class="main-container header__container">
             <h1 class="header__logo">
                 dr<span class="header__char">o</span>pp
             </h1>
+            <button class="header__menu" type="button">
+                <span class="header__string">
+                    <b>menu</b>
+                </span>
+            </button>
             <nav class="menu">
-                <ul class="menu__list">
+                <ul class="menu__list burger">
                     <li class="menu__list-item">
                         <a class="menu__link link" href="#home">HOME</a>
                     </li>
@@ -476,116 +486,116 @@
         </div>
     </section>
     <section class="section posts" id="posts">
-            <h2 class="section__title title">
-                LATEST POSTS
-            </h2>
+        <h2 class="section__title title">
+            LATEST POSTS
+        </h2>
         <div class="section__content posts__content">
-                <div class="main-container posts__container">
-                    <article class="blog">
-                        <a class="blog__container" href="#">
-                            <img class="blog__img" src="img/post1.jpg" alt="Летнее прюключение">
-                        </a>
-                        <div class="blog__container">
-                            <header class="blog__header">
-                                <h2 class="title blog__title">
-                                    <a class="blog__link" href="#">
-                                        SUMMER ADVENTURES
-                                    </a>
-                                </h2>
-                                <time class="blog__date" datetime="2013-12">
-                                    POSTED: DEC 14 2013
-                                </time>
-                            </header>
-                            <div class="blog__info">
-                                <p>
-                                    We can always be on our best or
-                                    worst behavior,depending on our
-                                    surroundings and the energy the
-                                    elements give us.Summertime is
-                                    usually the season to unwind(...)
-                                </p>
-                            </div>
+            <div class="main-container posts__container">
+                <article class="blog">
+                    <a class="blog__container" href="#">
+                        <img class="blog__img" src="img/post1.jpg" alt="Летнее прюключение">
+                    </a>
+                    <div class="blog__container">
+                        <header class="blog__header">
+                            <h2 class="title blog__title">
+                                <a class="blog__link" href="#">
+                                    SUMMER ADVENTURES
+                                </a>
+                            </h2>
+                            <time class="blog__date" datetime="2013-12">
+                                POSTED: DEC 14 2013
+                            </time>
+                        </header>
+                        <div class="blog__info">
+                            <p>
+                                We can always be on our best or
+                                worst behavior,depending on our
+                                surroundings and the energy the
+                                elements give us.Summertime is
+                                usually the season to unwind(...)
+                            </p>
                         </div>
-                    </article>
-                    <article class="blog">
-                        <a class="blog__container" href="#">
-                            <img class="blog__img" src="img/post2.jpg" alt="Герои журнала">
-                        </a>
-                        <div class="blog__container">
-                            <header class="blog__header">
-                                    <h2 class="title blog__title">
-                                        <a class="blog__link" href="#">
-                                            HEROES: DECAT O REVI...
-                                        </a>
-                                    </h2>
-                                <time class="blog__date" datetime="2013-12">
+                    </div>
+                </article>
+                <article class="blog">
+                    <a class="blog__container" href="#">
+                        <img class="blog__img" src="img/post2.jpg" alt="Герои журнала">
+                    </a>
+                    <div class="blog__container">
+                        <header class="blog__header">
+                            <h2 class="title blog__title">
+                                <a class="blog__link" href="#">
+                                    HEROES: DECAT O REVI...
+                                </a>
+                            </h2>
+                            <time class="blog__date" datetime="2013-12">
                                     POSTED: DEC 14 2013
-                                </time>
-                            </header>
-                            <div class="blog__info">
-                                <p>
-                                    This issue of “Decat o Revista” was
-                                    about the omnipresent story of the
-                                    “hero” - a story in wich we all find
-                                    ourselves fulfilling this archtypal
-                                    role in one way or another (...)
-                                </p>
-                            </div>
+                            </time>
+                        </header>
+                        <div class="blog__info">
+                            <p>
+                                This issue of “Decat o Revista” was
+                                about the omnipresent story of the
+                                “hero” - a story in wich we all find
+                                ourselves fulfilling this archtypal
+                                role in one way or another (...)
+                            </p>
                         </div>
-                    </article>
-                    <article class="blog">
-                        <a class="blog__container" href="#">
-                            <img class="blog__img" src="img/post3.jpg" alt="Карандаш">
-                        </a>
-                        <div class="blog__container">
-                            <header class="blog__header">
-                                <h2 class="title blog__title">
-                                    <a class="blog__link" href="#">
-                                        SUMMER ADVENTURES
-                                    </a>
-                                </h2>
-                                <time class="blog__date" datetime="2013-12">
-                                    POSTED: DEC 14 2013
-                                </time>
-                            </header>
-                            <div class="blog__info">
-                                <p>
-                                    We can always be on our best or
-                                    worst behavior,depending on our
-                                    surroundings and the energy the
-                                    elements give us.Summertime is
-                                    usually the season to unwind(...)
-                                </p>
-                            </div>
+                    </div>
+                </article>
+                <article class="blog">
+                    <a class="blog__container" href="#">
+                        <img class="blog__img" src="img/post3.jpg" alt="Карандаш">
+                    </a>
+                    <div class="blog__container">
+                        <header class="blog__header">
+                            <h2 class="title blog__title">
+                                <a class="blog__link" href="#">
+                                    SUMMER ADVENTURES
+                                </a>
+                            </h2>
+                            <time class="blog__date" datetime="2013-12">
+                                POSTED: DEC 14 2013
+                            </time>
+                        </header>
+                        <div class="blog__info">
+                            <p>
+                                We can always be on our best or
+                                worst behavior,depending on our
+                                surroundings and the energy the
+                                elements give us.Summertime is
+                                usually the season to unwind(...)
+                            </p>
                         </div>
-                    </article>
-                    <article class="blog">
-                        <a class="blog__container" href="#">
-                            <img class="blog__img" src="img/post4.jpg" alt="Карандаш">
-                        </a>
-                        <div class="blog__container">
-                            <header class="blog__header">
-                                <h2 class="title blog__title">
-                                    <a class="blog__link" href="#">
-                                        SUMMER ADVENTURES
-                                    </a>
-                                </h2>
-                                <time class="blog__date" datetime="2013-12">
-                                    POSTED: DEC 14 2013
-                                </time>
-                            </header>
-                            <div class="blog__info">
-                                <p>
-                                    We can always be on our best or
-                                    worst behavior,depending on our
-                                    surroundings and the energy the
-                                    elements give us.Summertime is
-                                    usually the season to unwind(...)
-                                </p>
-                            </div>
+                    </div>
+                </article>
+                <article class="blog">
+                    <a class="blog__container" href="#">
+                        <img class="blog__img" src="img/post4.jpg" alt="Карандаш">
+                    </a>
+                    <div class="blog__container">
+                        <header class="blog__header">
+                            <h2 class="title blog__title">
+                                <a class="blog__link" href="#">
+                                    SUMMER ADVENTURES
+                                </a>
+                            </h2>
+                            <time class="blog__date" datetime="2013-12">
+                                POSTED: DEC 14 2013
+                            </time>
+                        </header>
+                        <div class="blog__info">
+                            <p>
+                                We can always be on our best or
+                                worst behavior,depending on our
+                                surroundings and the energy the
+                                elements give us.Summertime is
+                                usually the season to unwind(...)
+                            </p>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
     <section class="section contact" id="contact">
