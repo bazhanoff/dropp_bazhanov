@@ -50,10 +50,18 @@
   }
 }
 @media screen and (max-width: 783px) {
+  .header__logo {
+    float: left;
+  }
   .header__menu {
-    display: inline-block;
+    float: right;
     color: #fff;
     background: #fd5433;
+  }
+  .header:after {
+    content: "";
+    display: block;
+    clear: both;
   }
   .menu {
     display: none;
