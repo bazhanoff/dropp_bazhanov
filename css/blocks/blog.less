@@ -1,6 +1,29 @@
-.blog{
-    display: flex;
-    width: 47%;
+.blog__container{
+    display: block;
+}
+
+@media screen and (min-width: 768px){
+
+    .blog{
+        display: flex;
+        width: 47%;
+    }
+
+    .blog__container{
+        width: 45%;
+    }
+
+    .blog__container:first-child{
+        margin-right: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+
+    .blog__container{
+        margin-top: 3rem;
+    }
 }
 
 .blog:not(:first-child){
@@ -9,14 +32,6 @@
 
 .blog:nth-child(2){
     margin-top: 0;
-}
-
-.blog__container{
-    width: 45%;
-}
-
-.blog__container:first-child{
-    margin-right: 3rem;
 }
 
 .blog__img{

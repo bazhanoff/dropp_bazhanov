@@ -12,33 +12,42 @@
             <h1 class="header__logo">
                 dr<span class="header__char">o</span>pp
             </h1>
-            <button class="header__menu" type="button">
-                <span class="header__string">
-                    <b>menu</b>
-                </span>
-            </button>
-            <nav class="menu">
-                <ul class="menu__list burger">
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#home">HOME</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#services">SERVICES</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#portfolio">PORTFOLIO</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#about">ABOUT</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#posts">BLOG</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__link link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </nav>
+    <nav id="burger-menu" class="menu">
+    <button class="menu__button" type="button" id="menu-button">
+    </button>
+    <ul class="menu__list main-container">
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#home">
+                HOME
+            </a>
+        </li>
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#services">
+                SERVICES
+            </a>
+        </li>
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#portfolio">
+                PORTFOLIO
+            </a>
+        </li>
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#about">
+                ABOUT
+            </a>
+        </li>
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#posts">
+                BLOG
+            </a>
+        </li>
+        <li class="menu__list-item">
+            <a class="menu__link menu-link" href="#contact">
+                CONTACT
+            </a>
+        </li>
+    </ul>
+    </nav>
         </div>
     </header>
     <div class="home" id="home">
@@ -595,7 +604,7 @@
     </section>
     <section class="section contact" id="contact">
         <div class="main-container">
-            <h2 class="section__title contact__title">
+            <h2 class="section__title title">
                 CONTACT US
             </h2>
         </div>
@@ -613,5 +622,6 @@
             </footer>
         </div>
     </section>
+    <script src="scripts/burger-menu.js"></script>
 </body>
 </html>
